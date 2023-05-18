@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+html * {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 1000;
+}
+.container {
+	margin: 0 auto;
+	max-width: 980px;
+}
+header {
+	background: #3155f1;
+}
+header .container {
+	display: table-footer-group;
+	align-items: center;
+	margin: 0 auto;
+	padding: 16px 8px;
+	max-width: 1500px;
+}
+.gazou {
+	flex: 0 0 auto;
+	margin-right: 16px;
+	width: 70px;
+	height: 70px;
+	background: url(gazou.png) no-repeat;
+	background-size: contain;
+}
+.page-title {
+	flex: 1 0 auto;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+	color: white;
+}
+.sub-title {
+	flex: 10 0;
+	margin: 0;
+	padding: 0;
+	font-size: 0.5rem;
+	color: rgb(158, 203, 224);
+}
+main {
+	min-height: calc(100% - 174px);
+}
+main .container {
+	margin: 0 auto;
+	padding: 32px 8px;
+	max-width: 980px;
+}
+
+
+footer {
+	margin-top: 200px;
+	border-top: 3px double #8a919e;
+}
+footer .container {
+	padding: 16px 8px;
+	color: #8a919e;
+}
