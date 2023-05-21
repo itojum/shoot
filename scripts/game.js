@@ -481,6 +481,9 @@ function circle(angle){
 function finish(){              //エンド
     end = 1;
     start++;
+
+    alert("GAMEOVER");
+    location.reload();
 }
 
 function tick(){            //繰り返し処理 
