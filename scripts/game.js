@@ -361,6 +361,7 @@ function ready(){                   //開始時カウント
     player.y=player.y-0.5;
     Paint();
     start++;
+    if(start==300)alert("スタート");
 }
 
 function enemy_tick(){          //敵の行動
@@ -481,6 +482,9 @@ function circle(angle){
 function finish(){              //エンド
     end = 1;
     start++;
+
+    alert("ゲームオーバー");
+    location.reload();
 }
 
 function tick(){            //繰り返し処理 
