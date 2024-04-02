@@ -7,3 +7,6 @@
 **使用言語・ライブラリ・フレームワーク:**  
 　JavaScript HTML CSS  
  　jQuery  
+**操作方法**
+　space 発射
+　矢印キー 移動
