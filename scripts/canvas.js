@@ -44,16 +44,14 @@ function Paint(){
 
         canvas.drawImage(gScreen, viewX, viewY, view_width, view_height, 0, 0, ca.width, ca.height);
     }
-
 }
-
 
 window.onresize=function(){
     Resize();
 }
 
 window.onload=function(){
-    setInterval("tick()",5);           //   5/1000秒周期    5*200
+    setInterval(tick, 5);           //   5/1000秒周期    5*200
     addEventListener( "keydown", key_down );
     addEventListener( "keyup", key_up );
 
@@ -80,13 +78,10 @@ function Resize(){
         screen_width=200;
         screen_height=200;
     }
-    screen_width=screen_width*1.2
+    screen_width=screen_width*1.2;
 
-    let magin_left = (document.documentElement.clientWidth - screen_width) /2
-
-
-
-    $('#main').css( 'margin-left' , magin_left );
+    let margin_left = (document.documentElement.clientWidth - screen_width) /2;
+    ca.style.marginLeft = margin_left + 'px';
     ca.width=screen_width*0.8;
     ca.height=screen_height;
 

@@ -329,7 +329,7 @@ function hit_enemy(i,index){
             }
             bullets.splice(index,1);
             
-            $("#boss-damage").get(0).play();
+            document.getElementById('boss-damage').play();
         }})
 }
 
